@@ -8,7 +8,7 @@ RUN rm -rf /etc/yum.repo.d/C* && \
 	#curl -O https://downloads.gradle.org/distributions/gradle-2.6-bin.zip && \
 	#unzip gradle-2.6-bin.zip && \
 	#mv gradle-2.6 /usr/local/ && \
-	rm -rf gradle-2.6-bin.zip
+	#rm -rf gradle-2.6-bin.zip
 	rm -rf /var/cache/yum/*
 #ENV PATH $PATH:/user/local/gradle-2.6/bin
 CMD ["/bin/bash"]
