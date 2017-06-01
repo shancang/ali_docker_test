@@ -12,4 +12,5 @@ RUN rm -rf /etc/yum.repo.d/C* && \
 	rm -rf gradle-2.6-bin.zip && \
 	rm -rf /var/cache/yum/*
 ENV PATH $PATH:/usr/local/gradle-2.6/bin
+ENV JAVA_HOME /usr/lib/jvm/java
 CMD ["/bin/bash"]
