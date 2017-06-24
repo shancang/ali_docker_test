@@ -1,5 +1,6 @@
 FROM centos
 COPY CentOS-Base.repo /etc/yum.repo.d/yum.repo
+COPY i18n /etc/sysconfig/i18n
 RUN rm -rf /etc/yum.repo.d/C* && \
 	yum -y install java  && \
 	yum -y install java-devel  && \
