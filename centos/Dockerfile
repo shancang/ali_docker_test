@@ -8,8 +8,8 @@ RUN rm -rf /etc/yum.repo.d/C* && \
 	rm -rf /var/cache/yum/* &&
 	rm -rf /usr/lib/jvm/java/jre/lib/security/US_export_policy.jar && \
 	rm -rf /usr/lib/jvm/java/jre/lib/security/local_policy.jar 
-ADD local_policy.jar /usr/lib/jvm/java/jre/lib/security/
-ADD US_export_policy.jar /usr/lib/jvm/java/jre/lib/security/
+#ADD local_policy.jar /usr/lib/jvm/java/jre/lib/security/
+#ADD US_export_policy.jar /usr/lib/jvm/java/jre/lib/security/
 ENV JAVA_HOME /usr/lib/jvm/java
 ENV TIME_ZONE Asia/Shanghai
 CMD ["/bin/bash"]
