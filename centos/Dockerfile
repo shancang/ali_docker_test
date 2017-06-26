@@ -13,4 +13,5 @@ ADD local_policy.jar /usr/lib/jvm/java/jre/lib/security/
 ADD US_export_policy.jar /usr/lib/jvm/java/jre/lib/security/
 ENV JAVA_HOME /usr/lib/jvm/java
 ENV TIME_ZONE Asia/Shanghai
+ENV LANG zh_CN.utf8
 CMD ["/bin/bash"]
